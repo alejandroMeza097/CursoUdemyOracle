@@ -1,0 +1,2 @@
+select 7 +4 FROM DUAL;
+DESC DUAL;
