@@ -1,0 +1,21 @@
+--Visualizar el nombre y salario de los empleados de los que el número de
+--empleado es impar (PISTA: MOD)
+SELECT * FROM EMPLOYEES;
+SELECT EMPLOYEE_ID,FIRST_NAME || ' ' || LAST_NAME AS NAME ,SALARY FROM EMPLOYEES
+WHERE MOD(EMPLOYEE_ID,2) = 0;
+
+
+--Prueba con los siguientes valores aplicando las funciones TRUNC y
+--ROUND, con 1 y 2 decimales.
+
+--25.67,0
+SELECT TRUNC(25.67,0) AS TRUNC FROM DUAL;
+SELECT ROUND(25.67,0) AS ROUND FROM DUAL;
+
+--25.67,1
+SELECT TRUNC(25.67,1) AS TRUNC FROM DUAL;
+SELECT ROUND(25.67,1) AS ROUND FROM DUAL;
+
+--25.34,1
+SELECT TRUNC(25.34,1) AS TRUNC FROM DUAL;
+SELECT ROUND(25.34,1) AS ROUND FROM DUAL;
