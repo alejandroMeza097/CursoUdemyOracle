@@ -2687,4 +2687,3 @@ IS 'Minimum salary for a job title.';
 
 COMMENT ON COLUMN jobs.max_salary  
 IS 'Maximum salary for a job title';
-
